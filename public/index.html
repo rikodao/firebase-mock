@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGC Application</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <div id="firebaseui-auth-container"></div>
+    <div class="uk-container">
+        <form id="myform" name="myform">
+            <textarea id="translate" class="uk-textarea"></textarea>
+            <textarea id="translated" class="uk-textarea"></textarea>
+        </form>
+        <button id="button01" class="uk-button uk-button-default">Translate</button>
+        <button id="logout" class="uk-button uk-button-default">Logout</button>
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-functions.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+<script src="./js/initializeApp.js"></script>
+<script src="./js/firebaseUI.js"></script>
+<script src="./js/onAuthStateChanged.js"></script>
+<script src="./js/submit.js"></script>
+<script src="./js/logout.js"></script>
+<!-- <script src="./js/callFunctions.js"></script> -->
+
+</html>

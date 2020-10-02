@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "agc-1000-100-50h-q-002-272900",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
